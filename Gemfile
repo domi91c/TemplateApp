@@ -50,3 +50,8 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
 end
+
+gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
+
+
+gem 'bulma-rails'

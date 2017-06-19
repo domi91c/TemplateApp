@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+@import "bulma/bulma";
+@import "buefy/lib/buefy";
+
+a.nav-item.is-brand {
+  padding-left: .75rem;
+}
+

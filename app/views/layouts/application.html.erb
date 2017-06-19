@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TemplateApp</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>TemplateApp</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-  <body>
-    <%= yield %>
-  </body>
+</head>
+
+<body>
+
+  <%= render 'layouts/navigation' %>
+
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <p class="title">
+            Documentation
+          </p>
+          <p class="subtitle">
+            Everything you need to <strong>create a website</strong> with Bulma
+          </p>
+        </div>
+        <div class="column is-narrow">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="container">
+  <%= yield %>
+
+
+</div>
+</body>
 </html>
